@@ -47,10 +47,10 @@ In this example, we will create a generator of last name.
 ES6
 
 ```ts
-import { createArrayGenerator } from "@faykah/core";
+import { createGenerator } from "@faykah/core";
 import { lastNames } from "@faykah/last-names-en";
 
-const generateLastName = createArrayGenerator(lastNames);
+const generateLastName = createGenerator(lastNames);
 
 generateLastName(); // "Walsh"
 generateLastName(); // "Wilson"
@@ -60,10 +60,10 @@ generateLastName(); // "Evans"
 CJS
 
 ```ts
-const { createArrayGenerator } = require("@faykah/core");
+const { createGenerator } = require("@faykah/core");
 const { lastNames } = require("@faykah/last-names-en");
 
-const generateLastName = createArrayGenerator(lastNames);
+const generateLastName = createGenerator(lastNames);
 
 generateLastName(); // "Walsh"
 generateLastName(); // "Wilson"
@@ -78,7 +78,7 @@ Browser
 	<script type="text/javascript" src="https://unpkg.com/@faykah/last-names-en@0.1.0/lib/index.browser.min.js" defer></script>
 
 	<script type="text/javascript" defer>
-		const generateLastName = Faykah.createArrayGenerator(Faykah.lastNames);
+		const generateLastName = Faykah.createGenerator(Faykah.lastNames);
 
 		generateLastName(); // "Walsh"
 		generateLastName(); // "Wilson"
