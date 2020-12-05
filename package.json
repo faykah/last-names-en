@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "An English dataset of last names.",
   "main": "lib/index.js",
+  "browser": "lib/index.browser.min.js",
   "typings": "lib/index.d.ts",
   "scripts": {
     "build": "./node_modules/rollup/dist/bin/rollup -c && ./node_modules/typescript/bin/tsc --declaration --emitDeclarationOnly --declarationDir lib",
